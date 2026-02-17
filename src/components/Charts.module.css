@@ -1,0 +1,209 @@
+.chartCard {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+}
+
+.chartTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.chartSub {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+/* ── Bar Chart ───────────────────── */
+.barChart {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    height: 160px;
+    padding-top: 8px;
+}
+
+.barCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.barTrack {
+    flex: 1;
+    width: 100%;
+    max-width: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    background: var(--bg-surface-2);
+}
+
+.barEarned {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: 6px 6px 0 0;
+    transition: height 0.6s ease;
+    min-height: 2px;
+}
+
+.barPending {
+    background: rgba(99, 102, 241, 0.25);
+    transition: height 0.6s ease;
+}
+
+.barLabel {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.legend {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dotEarned {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: inline-block;
+}
+
+.dotPending {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.25);
+    display: inline-block;
+}
+
+/* ── Donut Chart ─────────────────── */
+.donutWrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.donut {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    transform: rotate(-90deg);
+}
+
+.donutVal {
+    font-size: 22px;
+    font-weight: 800;
+    fill: var(--text-primary);
+    transform: rotate(90deg);
+    transform-origin: 60px 60px;
+}
+
+.donutLabel {
+    font-size: 10px;
+    fill: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transform: rotate(90deg);
+    transform-origin: 60px 60px;
+}
+
+.donutLegend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.donutLegendItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.donutLegendItem strong {
+    margin-left: auto;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.legendDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* ── Horizontal Bar ──────────────── */
+.hBars {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hBarRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hBarName {
+    width: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.hBarTrack {
+    flex: 1;
+    height: 8px;
+    background: var(--bg-surface-2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hBarFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--success));
+    border-radius: 4px;
+    transition: width 0.6s ease;
+}
+
+.hBarVal {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: right;
+}
+
+.emptyChart {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 24px 0;
+}

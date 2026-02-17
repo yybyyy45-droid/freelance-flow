@@ -1,0 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /invoices
+Disallow: /clients
+Disallow: /projects
+Disallow: /reports
+Disallow: /settings
+
+# Sitemap
+Sitemap: https://freelance-flow.vercel.app/sitemap.xml
